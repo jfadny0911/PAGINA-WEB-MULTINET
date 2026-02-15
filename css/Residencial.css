@@ -1,0 +1,92 @@
+.res-hero {
+    height: 45vh;
+    background: linear-gradient(rgba(0,33,89,0.8), rgba(0,33,89,0.8)), url('../imgmenu/home-bg.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.interactivo-section {
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
+    background: #f8faff;
+}
+
+.calc-container {
+    background: white;
+    padding: 50px;
+    border-radius: 35px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.slider-pro {
+    width: 100%;
+    margin: 40px 0;
+    accent-color: var(--primary-orange);
+    cursor: pointer;
+}
+
+.res-badge {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    padding: 15px;
+    border: 2px dashed var(--primary-orange);
+    border-radius: 15px;
+    display: inline-block;
+}
+
+/* --- RESET TOTAL PARA ELIMINAR CÍRCULOS Y NARANJA --- */
+#mnet-social-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 25px !important;
+    margin-bottom: 20px !important;
+    background: none !important;
+}
+
+.mnet-link {
+    all: unset !important; /* Elimina cualquier estilo heredado */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+/* TAMAÑO BASE PARA FACEBOOK Y TIKTOK */
+.icon-fb {
+    width: 32px !important;
+    height: 32px !important;
+    object-fit: contain !important;
+    transition: transform 0.2s ease !important;
+}
+
+/* TAMAÑO ESPECIAL PARA INSTAGRAM (Para que no se vea más pequeño) */
+.icon-ig {
+    width: 62px !important; /* Le damos más tamaño para compensar su borde */
+    height: 62px !important;
+    object-fit: contain !important;
+    transition: transform 0.2s ease !important;
+}
+
+.icon-tk {
+    width: 42px !important; /* Le damos más tamaño para compensar su borde */
+    height: 42px !important;
+    object-fit: contain !important;
+    transition: transform 0.2s ease !important;
+}
+
+/* EFECTO AL PASAR EL MOUSE (SOLO AGRANDA, NO CAMBIA COLOR) */
+.mnet-link:hover img {
+    transform: scale(1.1) !important;
+}

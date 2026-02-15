@@ -1,0 +1,118 @@
+.combo-hero {
+    padding: 100px 5%;
+    background: #f0f4ff;
+    display: flex;
+    justify-content: center;
+}
+
+.combo-card {
+    background: linear-gradient(135deg, var(--primary-blue), #0044bb);
+    color: white;
+    padding: 60px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,33,89,0.2);
+}
+
+.combo-price {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.combo-price span {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--primary-orange);
+}
+
+.ahorro-section {
+    padding: 60px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.ahorro-box {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    border: 1px solid #eee;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.ahorro-box input {
+    padding: 15px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+.btn-calc {
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-calc:hover { background: var(--primary-orange); }
+
+.resultado-ahorro {
+    margin-top: 25px;
+    font-size: 1.3rem;
+    color: var(--primary-blue);
+}
+
+/* --- RESET TOTAL PARA ELIMINAR CÍRCULOS Y NARANJA --- */
+#mnet-social-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 25px !important;
+    margin-bottom: 20px !important;
+    background: none !important;
+}
+
+.mnet-link {
+    all: unset !important; /* Elimina cualquier estilo heredado */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+/* TAMAÑO BASE PARA FACEBOOK Y TIKTOK */
+.icon-fb {
+    width: 32px !important;
+    height: 32px !important;
+    object-fit: contain !important;
+    transition: transform 0.2s ease !important;
+}
+
+/* TAMAÑO ESPECIAL PARA INSTAGRAM (Para que no se vea más pequeño) */
+.icon-ig {
+    width: 62px !important; /* Le damos más tamaño para compensar su borde */
+    height: 62px !important;
+    object-fit: contain !important;
+    transition: transform 0.2s ease !important;
+}
+
+.icon-tk {
+    width: 42px !important; /* Le damos más tamaño para compensar su borde */
+    height: 42px !important;
+    object-fit: contain !important;
+    transition: transform 0.2s ease !important;
+}
+
+/* EFECTO AL PASAR EL MOUSE (SOLO AGRANDA, NO CAMBIA COLOR) */
+.mnet-link:hover img {
+    transform: scale(1.1) !important;
+}
