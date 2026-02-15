@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mnet | Fibra Óptica Real</title>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="light-theme">
+
+    <div id="preloader"><div class="loader"></div></div>
+
+    <header class="topbar">
+        <div class="container">
+            <div class="logo">
+                <img src="imgmenu/logomenu.png" alt="Mnet Logo" class="logo-img">
+            </div>
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Internet ▾</a>
+                    <ul class="submenu">
+                        <li><a href="#">Internet Residencial</a></li>
+                        <li><a href="#">Internet + Cable TV</a></li>
+                        <li><a href="#">Internet Negocio</a></li>
+                        <li><a href="#">Internet Corporativo 1-1</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav-link">Pagos En Línea</a></li>
+                <li><a href="#" class="nav-link highlight">Suscripción Mnet+</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero tech-bg">
+        <canvas id="particle-canvas"></canvas>
+        <div class="hero-content">
+            <span class="badge"><h2>FIBRA ÓPTICA REAL</h2></span>
+            <h1>Infraestructura de Clase Mundial</h1>
+            <p><h3>Conexión simétrica de alta disponibilidad para el hogar y la empresa.</h3></p>
+            <div class="hero-btns">
+                <a href="#planes" class="btn-hero">Ver Planes</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section reveal" id="planes">
+        <div class="pricing-header">
+            <h2>Planes Residenciales</h2>
+            <p>Precios vigentes Octubre 2024</p>
+            <div class="toggle-container">
+                <span>Solo Internet</span>
+                <label class="switch">
+                    <input type="checkbox" id="plan-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <span>Dobleplay (Internet + TV)</span>
+            </div>
+        </div>
+
+        <div class="comparison-grid">
+            <div class="benefits-sidebar">
+                <h3>Detalles del Servicio</h3>
+                <ul>
+                    <li>FIBRA ÓPTICA SIMÉTRICA ↑</li>
+                    <li>SOPORTE TÉCNICO 24/7</li>
+                    <li>LATENCIA ULTRA BAJA</li>
+                    <li>CABLE TV 114 CANALES</li>
+                    <li>SIN CONTRATOS FORZOSOS</li>
+                </ul>
+            </div>
+            <div class="plans-wrapper" id="plans-container">
+                </div>
+        </div>
+
+        <div class="extra-services">
+            <h3>Complementos Mnet+</h3>
+            <div class="extra-grid">
+                <div class="extra-item">
+                    <span class="extra-icon">📺</span>
+                    <h4>1 Telefono o Firestick</h4>
+                    <p class="extra-price">$7.99<span>/mes</span></p>
+                </div>
+                <div class="extra-item">
+                    <span class="extra-icon">📱</span>
+                    <h4>2 Telefono o Firestick</h4>
+                    <p class="extra-price">$10.99<span>/mes</span></p>
+                </div>
+                <div class="extra-item">
+                    <span class="extra-icon">🔥</span>
+                    <h4>4 Telefono o Firestick</h4>
+                    <p class="extra-price">$13.99<span>/mes</span></p>
+                </div>
+            </div>
+            <div class="tv-note">
+                <p><strong>TV Digital Extra:</strong> $5.00 | <strong>Cable TV 114 Canales:</strong> $21.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section reveal">
+        <div class="contact-container">
+            <h2>Háblenos de su proyecto</h2>
+            <form id="business-form" class="pro-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Nombre de la Empresa" required>
+                    <input type="email" placeholder="Email Corporativo" required>
+                </div>
+                <textarea placeholder="Cuéntanos más sobre tu requerimiento..."></textarea>
+                <button type="submit" class="btn-submit">Enviar Solicitud</button>
+            </form>
+        </div>
+    </section>
+<div id="cookie-banner" class="cookie-notice">
+    <p>Utilizamos cookies propias y de terceros para mejorar su experiencia. Al continuar navegando, acepta nuestra <a href="#">Política de Cookies</a>.</p>
+    <button id="accept-cookies" class="btn-cookie">Aceptar</button>
+</div>
+
+<footer class="footer-dark">
+    <div class="footer-content">
+        <p>© 2026 Mnet Servicios S.A. de C.V. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="#" class="legal-link">Políticas de Uso Justo</a>
+            <span class="separator">|</span>
+            <a href="#" class="legal-link">Aviso de Privacidad</a>
+            <span class="separator">|</span>
+            <a href="#" class="legal-link">Términos y Condiciones</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
