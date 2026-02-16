@@ -90,3 +90,288 @@
 .mnet-link:hover img {
     transform: scale(1.1) !important;
 }
+
+/* --- FOOTER SOCIALS CLEAN --- */
+/* --- BANNER DE COOKIES --- */
+.cookie-notice {
+    position: fixed;
+    bottom: -150px; /* Totalmente oculto al inicio */
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.1);
+    z-index: 10000; /* Prioridad máxima */
+    transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Esta clase es la que activa el JavaScript */
+.cookie-notice.show {
+    bottom: 0; 
+}
+
+.cookie-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.btn-cookie {
+    background: #002159; /* Tu color azul */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cookie:hover {
+    background: #FF4C00; /* Tu color naranja */
+}
+
+/* --- FOOTER LINKS --- */
+.footer-links { margin-top: 15px; }
+.legal-link { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.8rem; margin: 0 10px; }
+.legal-link:hover { color: #FF4C00; }
+
+/* Estilos del Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 33, 89, 0.85); /* Azul Mnet con transparencia */
+    display: none; /* Oculto por defecto */
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    max-height: 80vh;
+    padding: 40px;
+    border-radius: 25px;
+    position: relative;
+    overflow-y: auto;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px; right: 25px;
+    font-size: 35px;
+    cursor: pointer;
+    color: var(--primary-blue);
+}
+
+.close-modal:hover { color: var(--primary-orange); }
+
+/* Estilo del texto legal dentro del modal */
+.legal-text-content h2 { color: var(--primary-blue); margin-bottom: 20px; border-bottom: 3px solid var(--primary-orange); display: inline-block; }
+.legal-text-content h3 { color: var(--primary-orange); margin-top: 20px; }
+.legal-text-content p, .legal-text-content li { line-height: 1.6; color: #444; margin-bottom: 10px; }
+.priority-tag { font-weight: bold; padding: 2px 8px; border-radius: 4px; }
+.low { background: #e1f5fe; color: #01579b; }
+.critical { background: #ffebee; color: #b71c1c; }
+
+/* --- FOOTER --- */
+.footer-main {
+    background: #001233; /* Fondo oscuro */
+    color: white;
+    padding: 60px 0 0 0;
+}
+
+/* FIX PARA EL LOGO: Si no se ve, esto lo fuerza a blanco */
+.footer-logo {
+    height: 70px;
+    margin-bottom: 20px;
+    display: block;
+    filter: brightness(0) invert(1); /* Convierte el logo a blanco */
+    object-fit: contain;
+}
+
+/* Estilos de Iconos Sociales */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.social-icon.fb:hover { background: #1877f2; }
+.social-icon.ig:hover { background: #e4405f; }
+.social-icon.tk:hover { background: #000000; }
+
+/* --- WHATSAPP FLOTANTE MODERNO --- */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    z-index: 9999;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.whatsapp-float i { font-size: 1.8rem; }
+.whatsapp-float span { font-weight: 700; font-size: 0.9rem; }
+
+.whatsapp-float:hover {
+    transform: scale(1.05);
+    background-color: #128c7e;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 33, 89, 0.9); /* Fondo oscuro */
+    display: none; /* INICIA OCULTO */
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+/* IMPORTANTE: El JS cambiará el style.display a 'flex' para mostrarlo */
+.modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto; /* Para que el texto largo se pueda bajar */
+    position: relative;
+}
+.footer-main {
+    background: #001233; /* Azul muy oscuro para contraste */
+    color: white;
+    padding-top: 80px;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+.footer-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 0 5% 60px 5%;
+}
+
+.footer-logo { height: 60px; margin-bottom: 20px; filter: brightness(0) invert(1); }
+
+.footer-col h4 {
+    color: var(--primary-orange);
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-col p { line-height: 1.7; font-size: 0.95rem; color: rgba(255,255,255,0.7); }
+
+.footer-col ul { list-style: none; padding: 0; }
+.footer-col ul li { margin-bottom: 12px; color: rgba(255,255,255,0.7); font-size: 0.95rem; }
+
+.priority-note {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(255, 76, 0, 0.1);
+    border-left: 3px solid var(--primary-orange);
+    color: white !important;
+}
+
+/* Redes Sociales */
+.social-links { display: flex; gap: 15px; margin-top: 25px; }
+.social-icon {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    transition: 0.3s;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.social-icon:hover { background: var(--primary-orange); transform: translateY(-3px); }
+
+.footer-bottom {
+    background: #000a1f;
+    padding: 25px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.4);
+}
+
+@media (max-width: 992px) {
+    .footer-container { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+    .footer-container { grid-template-columns: 1fr; }
+}
+.modal-content {
+    background: white;
+    width: 90%;
+    max-width: 850px;
+    max-height: 85vh; /* Limita la altura para que haya scroll */
+    padding: 40px;
+    border-radius: 30px;
+    overflow-y: auto; /* Habilita el scroll interno */
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+.legal-text-content h2 { 
+    color: var(--primary-blue); 
+    margin-bottom: 25px; 
+    border-bottom: 4px solid var(--primary-orange); 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.legal-text-content h3 { 
+    color: var(--primary-orange); 
+    margin-top: 25px; 
+    font-size: 1.3rem;
+}
+
+.legal-text-content p, .legal-text-content li { 
+    line-height: 1.8; 
+    color: #444; 
+    margin-bottom: 12px;
+}

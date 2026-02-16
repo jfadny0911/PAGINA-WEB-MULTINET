@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Cable.css">
     <link rel="icon" type="image/png" href="imgmenu/logomenu.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="light-theme">
+
     <header class="topbar">
         <div class="container">
             <div class="logo"><a href="index.html"><img src="imgmenu/logomenu.png" alt="Mnet Logo" class="logo-img"></a></div>
@@ -31,48 +33,181 @@
                         <li><a href="Cable.html">Cable TV</a></li>
                     </ul>
                 </li>
-                <li><a href="https://clientes.multinetcorp.net/cusfastpayment?_gl=1*18ylktt*_gcl_au*MTE5NTM1NDY5Mi4xNzcxMDkyMDg4*_ga*MTAxOTM5MTQyOS4xNzU4MDU4NzI2*_ga_NVRV6LVCSR*czE3NzExNjQyOTgkbzYkZzAkdDE3NzExNjQyOTgkajYwJGwwJGgw" class="nav-link">Pagos En Línea</a></li>
-                <li><a href="https://clientes.multinetcorp.net/?_gl=1*snmnba*_gcl_au*MTE5NTM1NDY5Mi4xNzcxMDkyMDg4*_ga*MTAxOTM5MTQyOS4xNzU4MDU4NzI2*_ga_NVRV6LVCSR*czE3NzExNjQyOTgkbzYkZzAkdDE3NzExNjQyOTkkajU5JGwwJGgw" class="nav-link highlight">Suscripción Mnet+</a></li>
+                <li><a href="https://clientes.multinetcorp.net/cusfastpayment" class="nav-link">Pagos En Línea</a></li>
+                <li><a href="https://clientes.multinetcorp.net/" class="nav-link highlight">Suscripción Mnet+</a></li>
+                <li><a href="https://www.speedtest.net/es" class="nav-link Prueba" target="_blank">Prueba de Velocidad 🚀</a></li>
             </ul>
         </div>
     </header>
 
-    <main>
-        <section class="cable-hero">
-            <h1>TV Digital HD</h1>
-            <p>Explora nuestras categorías de canales.</p>
+    <main class="cable-main-container">
+        <section class="cable-hero fade-in">
+            <span class="hero-tag">ENTRETENIMIENTO SIN COMPLICACIONES</span>
+            <h1 class="gradient-text">TV Conexión Total</h1>
+            <p>Selecciona una categoría para conocer nuestra programación premium.</p>
         </section>
 
-        <section class="mosaico-section">
-            <div class="mosaico-grid">
-                <div class="m-item cine" onclick="alert('Programas de Cine: HBO, STAR, TNT, Warner')">PELÍCULAS</div>
-                <div class="m-item deportes" onclick="alert('Canales de Deportes: ESPN, FOX, TUDN, TyC')">DEPORTES</div>
-                <div class="m-item niños" onclick="alert('Canales Infantiles: Disney, Nick, Cartoon')">NIÑOS</div>
+        <section class="mosaico-section fade-in-delayed">
+            <div class="mosaico-flex-container">
+                <div class="m-item glass-effect" data-genre="nacionales">
+                    <i class="fas fa-satellite-dish"></i>
+                    <span>NACIONALES & NOTICIAS</span>
+                </div>
+                <div class="m-item glass-effect" data-genre="cine">
+                    <i class="fas fa-clapperboard"></i>
+                    <span>PELÍCULAS & SERIES</span>
+                </div>
+                <div class="m-item glass-effect" data-genre="deportes">
+                    <i class="fas fa-trophy"></i>
+                    <span>DEPORTES</span>
+                </div>
+                <div class="m-item glass-effect" data-genre="niños">
+                    <i class="fas fa-face-smile-beam"></i>
+                    <span>INFANTIL</span>
+                </div>
+                <div class="m-item glass-effect" data-genre="musica">
+                    <i class="fas fa-headphones-alt"></i>
+                    <span>MÚSICA</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section fade-in-delayed">
+            <div class="faq-container">
+                <h2 class="faq-main-title">¿Necesitas ayuda con tu señal?</h2>
+                <p class="faq-intro">Sigue estos sencillos pasos para resolver inconvenientes técnicos desde casa.</p>
+                
+                <div class="faq-wrapper">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span><i class="fas fa-tv"></i> Mi señal se ve "con lluvia" o nevada</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </button>
+                        <div class="faq-answer">
+    <div class="steps-container">
+        <p>Por lo general, esto se debe a un ajuste físico en el cableado:</p>
+        <ul class="steps-list">
+            <li><span>1</span> Verrifica que el cable coaxial esté bien enroscado en el puerto RF de tu TV.</li>
+            <li><span>2</span> Revisa que el cable no esté muy doblado o aplastado.</li>
+            <li><span>3</span> Verifica que los conectores no tengan óxido.</li>
+        </ul>
+    </div>
+</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span><i class="fas fa-search"></i> Guía rápida para sintonizar canales</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="steps-container">
+                                <p>Si te faltan canales, realiza este proceso con tu control remoto:</p>
+                                <ul class="steps-list">
+                                    <li><span>1</span> Entra al botón de "Menú" o "Settings" de tu televisor.</li>
+                                    <li><span>2</span> Busca el apartado de "Canales" o "Configuración de Antena".</li>
+                                    <li><span>3</span> Selecciona "Sintonización Automática" y asegúrate que la fuente sea 'Cable'.</li>
+                                    <li><span>4</span> Permite que el proceso llegue al 100% para actualizar la lista.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span><i class="fas fa-futbol"></i> ¿Cómo puedo ver la Liga Española?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="steps-container">
+                                <p>¡Toda la pasión del fútbol europeo está en casa!</p>
+                                <ul class="steps-list">
+                                    <li><span>1</span> Sintoniza exclusivamente el Canal 3 de tu servicio de cable.</li>
+                                    <li><span>2</span> Ahí podrás disfrutar de los encuentros en vivo de la Liga Española.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span><i class="fas fa-headset"></i> ¿Cómo reportar una falla técnica?</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="steps-container">
+                                <p>Si después de los pasos anteriores el problema persiste:</p>
+                                <ul class="steps-list">
+                                    <li><span>1</span> Escríbenos directamente por WhatsApp al 7696-1049 o nuestro PBX el 2331-7000.</b>.</li>
+                                    <li><span>2</span> Proporciona tu nombre y número de cliente para agilizar el reporte.</li>
+                                    <li><span>3</span> En caso de no obtener una resolución remota un técnico te visitará en un lapso de 24 a 72 horas hábiles.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-channels-bar">
+            <div class="moving-track">
+                <span>HBO • STAR • ESPN • DISNEY • TNT • WARNER • AMC • HISTORY • MTV • DISCOVERY • FOX SPORTS • CARTOON NETWORK • HBO • STAR • ESPN • TNT</span>
             </div>
         </section>
     </main>
 
-    <a href="https://wa.me/76961049" class="whatsapp-minimal" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    <footer class="footer-main">
+        <div class="footer-container">
+            <div class="footer-col about">
+                <img src="imgmenu/logomenu.png" alt="Mnet Logo" class="footer-logo">
+                <p><strong>Multimedia Network, S.A. DE C.V.</strong></p>
+                <p>Conectividad de alta disponibilidad en El Salvador.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon ig"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon tk"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Agencias</h4>
+                <ul>
+                    <li>Santiago Nonualco</li>
+                    <li>Zacatecoluca</li>
+                    <li>San Salvador</li>
+                    <li>Zaragoza</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Soporte</h4>
+                <p>Lun-Vie: 7AM - 7PM</p>
+                <p>Sab-Dom: 7AM - 5PM</p>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Políticas de Uso</a></li>
+                    <li><a href="#">Aviso de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Multimedia Network, S.A. DE C.V. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="modal-legal" class="modal-overlay">
+        <div class="modal-content glass-modal">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body-text"></div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/76961049" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chatea Con Nosotros</span>
     </a>
 
-<footer class="footer-dark">
-    <div class="footer-compact">
-        <div id="mnet-social-container">
-            <a href="https://www.facebook.com/share/1CH99fPcB4/" target="_blank" class="mnet-link">
-                <img src="imgmenu/fc.png" alt="Facebook" class="icon-fb">
-            </a>
-            <a href="https://www.instagram.com/multinetelsalvador?igsh=MWE5bTFqanlmMGlhYg==" target="_blank" class="mnet-link">
-                <img src="imgmenu/ig.png" alt="Instagram" class="icon-ig">
-            </a>
-            <a href="https://www.tiktok.com/@multinetsv?_r=1&_t=ZS-93wcP6T9ogP" target="_blank" class="mnet-link">
-                <img src="imgmenu/tk.png" alt="TikTok" class="icon-tk">
-            </a>
-        </div>
-        <p>© 2026 Multimedia Network S.A. de C.V. Todos los derechos reservados.</p>
-    </div>
-</footer>
-
-    <script src="js/funciones_extras.js"></script>
+    <script src="js/Cable.js"></script>
 </body>
 </html>

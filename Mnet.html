@@ -10,6 +10,8 @@
     <link rel="icon" type="image/png" href="imgmenu/logomenu.png">
 </head>
 <body class="light-theme">
+    <div id="mnet-particles"></div>
+
     <header class="topbar">
         <div class="container">
             <div class="logo"><a href="index.html"><img src="imgmenu/logomenu.png" alt="Mnet Logo" class="logo-img"></a></div>
@@ -31,53 +33,142 @@
                         <li><a href="Cable.html">Cable TV</a></li>
                     </ul>
                 </li>
-                <li><a href="https://clientes.multinetcorp.net/cusfastpayment?_gl=1*18ylktt*_gcl_au*MTE5NTM1NDY5Mi4xNzcxMDkyMDg4*_ga*MTAxOTM5MTQyOS4xNzU4MDU4NzI2*_ga_NVRV6LVCSR*czE3NzExNjQyOTgkbzYkZzAkdDE3NzExNjQyOTgkajYwJGwwJGgw" class="nav-link">Pagos En Línea</a></li>
-                <li><a href="https://clientes.multinetcorp.net/?_gl=1*snmnba*_gcl_au*MTE5NTM1NDY5Mi4xNzcxMDkyMDg4*_ga*MTAxOTM5MTQyOS4xNzU4MDU4NzI2*_ga_NVRV6LVCSR*czE3NzExNjQyOTgkbzYkZzAkdDE3NzExNjQyOTkkajU5JGwwJGgw" class="nav-link highlight">Suscripción Mnet+</a></li>
+                <li><a href="https://clientes.multinetcorp.net/cusfastpayment" class="nav-link">Pagos En Línea</a></li>
+                <li><a href="https://clientes.multinetcorp.net/" class="nav-link highlight">Suscripción Mnet+</a></li>
+                <li><a href="https://www.speedtest.net/es" class="nav-link Prueba" target="_blank">Prueba de Velocidad 🚀</a></li>
             </ul>
         </div>
     </header>
 
-    <main class="dark-main">
-        <section class="mnet-hero">
-            <h1>Mnet+ Streaming</h1>
-            <p>Toda tu TV en la palma de tu mano.</p>
-        </section>
+<main class="dark-main">
+    <section class="mnet-hero">
+        <div class="hero-block">
+            <div class="hero-text-side">
+                <span class="hero-tag">NUEVA EXPERIENCIA</span>
+                <h1>Mnet+ Streaming</h1>
+                <p>Toda tu TV en la palma de tu mano. Disfruta de la mejor programación donde sea que estés.</p>
+                
+                <div class="hero-actions">
+                    <a href="https://play.google.com/store/apps/details?id=net.multinetcorp.appiptv&pcampaignid=web_share" target="_blank" class="btn-download-now">
+                        <span>Descargar ahora</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image-side">
+                <div class="dashboard-container" id="tvElement">
+                    <div class="dashboard-screen">
+<div class="channel-grid">
+    <div class="channel-item">
+        <img src="imgmenu/4.png" alt="ESPN" class="channel-img">
+    </div>
+    
+    <div class="channel-item">
+        <img src="imgmenu/sp.png" alt="Comedy Central" class="channel-img">
+    </div>
+    
+    <div class="channel-item">
+        <img src="imgmenu/espn.png" alt="Mnet+" class="channel-img">
+    </div>
+    
+    <div class="channel-item">
+        <img src="imgmenu/u.png" alt="Universal" class="channel-img">
+    </div>
+    
+    <div class="channel-item">
+        <img src="imgmenu/iptv.webp" alt="Canal 4" class="channel-img">
+    </div>
+    
+    <div class="channel-item">
+        <img src="imgmenu/cc.png" alt="TCS" class="channel-img">
+    </div>
+</div>
+                        <div class="screen-glare"></div>
+                    </div>
+                    <div class="dashboard-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="device-section">
+        ...
 
         <section class="device-section">
             <div class="device-card">
                 <h3>¿Cómo instalar en mi dispositivo?</h3>
                 <select id="selectDevice" class="device-select">
                     <option value="">Elige tu marca...</option>
-                    <option value="samsung">Samsung Smart TV</option>
-                    <option value="lg">LG Smart TV</option>
+                    <option value="android">Smart TV (Android TV)</option>
                     <option value="roku">Roku / Stick</option>
+                    <option value="firestick">Amazon Fire Stick</option>
                 </select>
-                <div id="deviceStep" class="step-box">Selecciona una opción para comenzar.</div>
+                <div id="deviceStep" class="step-box-dynamic">
+                    <p>Selecciona una opción para comenzar.</p>
+                </div>
             </div>
         </section>
     </main>
 
-<a href="https://wa.me/76961049" class="whatsapp-minimal" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <footer class="footer-main">
+        <div class="footer-container">
+            <div class="footer-col about">
+                <img src="imgmenu/logomenu.png" alt="Multimedia Network Logo" class="footer-logo">
+                <p><strong>Multimedia Network, S.A. DE C.V.</strong></p>
+                <p>Líderes en Fibra Óptica Real y conectividad de alta disponibilidad en El Salvador.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" class="social-icon fb" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" class="social-icon ig" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://tiktok.com" class="social-icon tk" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Agencias</h4>
+                <ul>
+                    <li>Santiago Nonualco</li>
+                    <li>Zacatecoluca</li>
+                    <li>San Salvador</li>
+                    <li>Zaragoza</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Soporte</h4>
+                <p>Lun-Vie: 7AM - 7PM</p>
+                <p>Sab-Dom: 7AM - 5PM</p>
+                <p class="priority-note">Respuesta en resolución del caso: 24-72 Horas.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#" class="legal-link">Políticas de Uso Justo</a></li>
+                    <li><a href="#" class="legal-link">Aviso de Privacidad</a></li>
+                    <li><a href="#" class="legal-link">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Multimedia Network, S.A. DE C.V. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="modal-legal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body-text"></div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/76961049" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chatea Con Nosotros</span>
     </a>
 
-<footer class="footer-dark">
-    <div class="footer-compact">
-        <div id="mnet-social-container">
-            <a href="https://www.facebook.com/share/1CH99fPcB4/" target="_blank" class="mnet-link">
-                <img src="imgmenu/fc.png" alt="Facebook" class="icon-fb">
-            </a>
-            <a href="https://www.instagram.com/multinetelsalvador?igsh=MWE5bTFqanlmMGlhYg==" target="_blank" class="mnet-link">
-                <img src="imgmenu/ig.png" alt="Instagram" class="icon-ig">
-            </a>
-            <a href="https://www.tiktok.com/@multinetsv?_r=1&_t=ZS-93wcP6T9ogP" target="_blank" class="mnet-link">
-                <img src="imgmenu/tk.png" alt="TikTok" class="icon-tk">
-            </a>
-        </div>
-        <p>© 2026 Multimedia Network S.A. de C.V. Todos los derechos reservados.</p>
-    </div>
-</footer>
-
-    <script src="js/funciones_extras.js"></script>
+    <script src="js/Mnet.js"></script>
 </body>
 </html>
